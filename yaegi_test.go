@@ -13,10 +13,10 @@ import (
 func TestParse(t *testing.T) {
 	cfg := []byte(`package config
 	import (
-		"maps" // https://github.com/containous/yaegi/issues/327
+		"maps"
 		"os"
 	)
-	
+
 	func Load() (map[string]interface{}, error) {
 		config := map[string]interface{}{
 			"brokers": []string{"localhost:42", "localhost:4242"},
@@ -27,11 +27,11 @@ func TestParse(t *testing.T) {
 				"db":       1,
 			},
 		}
-	
+
 		if os.Getenv("MAGIC_FEATURE") == "enabled" {
 			maps.Set(config, "feature", "testouille")
 		}
-	
+
 		return config, nil
 	}`)
 

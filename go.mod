@@ -1,13 +1,17 @@
 module github.com/mdouchement/koanfgo
 
-go 1.14
+go 1.18
 
 require (
-	github.com/Shopify/go-lua v0.0.0-20191113154418-05ce435a9edd
-	github.com/Shopify/goluago v0.0.0-20181106184041-88ed7d28bef6
-	github.com/containous/yaegi v0.8.1
 	github.com/knadh/koanf v0.8.2
-	github.com/mdouchement/koanflua v0.0.0-20200327230933-8e92ff2d210c
 	github.com/sanity-io/litter v1.2.0
-	github.com/stretchr/testify v1.5.1
+	github.com/stretchr/testify v1.8.1
+	github.com/traefik/yaegi v0.14.3
+)
+
+require (
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/mitchellh/mapstructure v1.1.2 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

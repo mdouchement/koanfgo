@@ -3,9 +3,9 @@ package koanfgo
 import (
 	"reflect"
 
-	"github.com/containous/yaegi/interp"
-	"github.com/containous/yaegi/stdlib"
 	"github.com/sanity-io/litter"
+	"github.com/traefik/yaegi/interp"
+	"github.com/traefik/yaegi/stdlib"
 )
 
 // Go implements a Go parser for koanf.
